@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+[type="reset"],
+[type="submit"],
+button,
+html [type="button"] {
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+
+
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bg-pink {
+  background-color: #ec417a !important;
+}
+.bg-purple {
+  background-color: #be9bf6 !important;
+}
+
+/* hero-wrapper-section */
+.hero-wrapper-section {
+  padding: 20px 0px 20px;
+  background-color: #f3f4f4;
+}
+.hero-wrapper-section h1 {
+  font-size: 44px;
+}
+/* age-group-btn-section */
+.age-group-btn-section {
+  padding: 20px 0px;
+}
+.age-group-btn-section .age-btn {
+  background-color: #2f9ee9;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 22px;
+  width: 100%;
+  text-wrap: wrap;
+  padding: 20px 0px;
+}
+.rating-num {
+  font-weight: 500;
+  font-size: 37px;
+}
+.age-group-body-content h2 {
+  font-size: 43px;
+}
+.slider-rating {
+  background-color: #f5f5f5;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.21) inset;
+  min-height: 12px;
+  margin: 12px 0;
+}
+.slider-rating span {
+  display: block;
+  background-color: #1c1c1c;
+  min-height: 12px;
+  border-radius: 4px 0 0 4px;
+  line-height: 1.467em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+}
+.slider-rating span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.2) 75%,
+    transparent 75%,
+    transparent
+  );
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-radius: 8px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+.rating-right img {
+  width: 100%;
+  margin-right: 7px;
+}
+.rating-right strong {
+  font-size: 12px;
+}
+
+.rating-right span {
+  display: flex;
+  margin: 7px 0;
+  align-items: center;
+}
+.rating-right {
+  width: 100px;
+}
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+/*  */
+
+.cards-section {
+  padding: 30px 0px 30px;
+}
+.brand-circle h5 {
+  background: #fddce5;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 25px;
+}
+.cards-section .card h6 {
+  font-size: 14px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.cards-section .card {
+  border-radius: 10px;
+  padding: 10px;
+}
+.cards-section .card h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.cards-section .card p {
+  font-size: 15px;
+  opacity: 0.6;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+}
+.footer-section {
+  padding: 20px 0px 20px;
+}
+.footer-section p {
+  font-size: 15px;
+  opacity: 0.7;
+}
+.footer-section small {
+  font-size: 12px;
+  text-align: justify;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+.hero-wrapper-section {
+  padding: 10px 0px 20px;
+  background-color: #f3f4f4;
+}
+.hero-wrapper-section h1 {
+  font-size: 30px;
+}
+/* age-group-btn-section */
+.age-group-btn-section {
+  padding: 10px 0px;
+}
+
+.rating-num {
+  font-weight: 500;
+  font-size: 37px;
+}
+.age-group-body-content h2 {
+  font-size: 23px;
+  line-height: 1.4;
+}
+
+
+
+/*  */
+
+.cards-section {
+  padding: 20px 0px 30px;
+
+}
+
+
+.cards-section .card {
+  padding: 5px;
+}
+.cards-section .card h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.cards-section .card p {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+.footer-section {
+  padding: 10px 0px 20px;
+}
+.footer-section p {
+  font-size: 14px;
+}
+.footer-section small {
+  font-size: 12px;
+  text-align: justify;
+}
+}
